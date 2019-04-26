@@ -12,4 +12,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.versio
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.
