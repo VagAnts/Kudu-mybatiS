@@ -29,4 +29,6 @@
 
     <dependencies>
         <dependency>
-            <gro
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </depend
