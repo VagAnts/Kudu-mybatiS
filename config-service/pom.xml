@@ -41,3 +41,9 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>config-service-1.0-RELEASE</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.
