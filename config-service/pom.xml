@@ -46,4 +46,7 @@
         <finalName>config-service-1.0-RELEASE</finalName>
         <plugins>
             <plugin>
-                <groupId>org.
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </p
