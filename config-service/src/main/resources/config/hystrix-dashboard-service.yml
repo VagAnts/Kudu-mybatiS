@@ -9,4 +9,12 @@ anagement:
   endpoints:
     web:
       exposure:
-    
+        include: '*'
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      d
