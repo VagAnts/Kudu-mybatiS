@@ -1,2 +1,12 @@
 server:
-  por
+  port: 9090
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+
+anagement:
+  endpoints:
+    web:
+      exposure:
+    
