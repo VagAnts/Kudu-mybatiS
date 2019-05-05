@@ -6,4 +6,10 @@ spring:
     name: user-service
   datasource:
     url: jdbc:h2:mem:user-service-db;DB_CLOSE_DELAY=-1;
- 
+    username: admin
+    password: 123qwe
+    driver-class-name: org.h2.Driver
+    platform: h2
+  h2:
+    console:
+      enabled:
