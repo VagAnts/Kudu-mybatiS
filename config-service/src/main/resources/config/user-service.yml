@@ -12,4 +12,12 @@ spring:
     platform: h2
   h2:
     console:
-      enabled:
+      enabled: true
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  main:
+    allow-bean-definition-overriding: true
+
