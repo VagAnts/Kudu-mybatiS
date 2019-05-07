@@ -21,3 +21,11 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
+user-service:
+  ribbon:
+    listOfServers: http://localhost:9001
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-regi
