@@ -34,4 +34,12 @@ eureka:
   instance:
     hostname: localhost
 
-mana
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+  security:
+    enabled: false
+
+endpoints.enabl
