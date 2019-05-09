@@ -42,4 +42,8 @@ management:
   security:
     enabled: false
 
-endpoints.enabl
+endpoints.enabled: false
+
+endpoints:
+  info.enabled: true
+  health.enabled: true
