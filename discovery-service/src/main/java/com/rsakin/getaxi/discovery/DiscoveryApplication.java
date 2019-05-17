@@ -12,4 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaServer
 @RestController
-public class Discove
+public class DiscoveryApplication {
+
+    @Value("${sample.profile-msg:Message could not be retrieved}")
+    private String profileMsg;
+
+    public st
