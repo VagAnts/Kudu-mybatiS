@@ -17,4 +17,8 @@ public class DiscoveryApplication {
     @Value("${sample.profile-msg:Message could not be retrieved}")
     private String profileMsg;
 
-    public st
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(DiscoveryApplication.class).run(args);
+    }
+
+    @GetMapping("/hello")
