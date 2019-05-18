@@ -1,1 +1,10 @@
-spr
+spring:
+  profiles:
+    active: docker
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+sample:
