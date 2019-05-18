@@ -22,3 +22,8 @@ public class DiscoveryApplication {
     }
 
     @GetMapping("/hello")
+    public ResponseEntity<String> hi() {
+        return new ResponseEntity<>(profileMsg, HttpStatus.OK);
+    }
+
+}
