@@ -8,3 +8,4 @@ eureka:
     fetchRegistry: false
 
 sample:
+  profile-msg: Hello Docker profile
