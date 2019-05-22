@@ -3,4 +3,7 @@ eureka:
     hostname: localhost
   client:
     registerWithEureka: false
-    fetchRegi
+    fetchRegistry: false
+
+sample:
+  profile-msg: Hello Native profile
