@@ -172,4 +172,10 @@ find_maven_basedir() {
   fi
 
   basedir="$1"
-  wdir=
+  wdir="$1"
+  while [ "$wdir" != '/' ] ; do
+    if [ -d "$wdir"/.mvn ] ; then
+      basedir=$wdir
+      break
+    fi
+    # workaroun
