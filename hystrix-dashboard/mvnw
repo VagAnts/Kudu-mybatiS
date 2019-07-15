@@ -190,4 +190,13 @@ find_maven_basedir() {
 # concatenates all lines of a file
 concat_lines() {
   if [ -f "$1" ]; then
-    echo "$(tr -s '\n' ' ' <
+    echo "$(tr -s '\n' ' ' < "$1")"
+  fi
+}
+
+BASE_DIR=`find_maven_basedir "$(pwd)"`
+if [ -z "$BASE_DIR" ]; then
+  exit 1;
+fi
+
+######################################
