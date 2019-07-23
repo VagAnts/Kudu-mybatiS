@@ -208,4 +208,7 @@ if [ -r "$BASE_DIR/.mvn/wrapper/maven-wrapper.jar" ]; then
       echo "Found .mvn/wrapper/maven-wrapper.jar"
     fi
 else
-    if [ "$MVNW_VERBOSE" = tru
+    if [ "$MVNW_VERBOSE" = true ]; then
+      echo "Couldn't find .mvn/wrapper/maven-wrapper.jar, downloading it ..."
+    fi
+    if [ -n "$MVNW_REPOURL"
