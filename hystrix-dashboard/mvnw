@@ -220,4 +220,7 @@ else
       case "$key" in (wrapperUrl) jarUrl="$value"; break ;;
       esac
     done < "$BASE_DIR/.mvn/wrapper/maven-wrapper.properties"
-    if 
+    if [ "$MVNW_VERBOSE" = true ]; then
+      echo "Downloading from: $jarUrl"
+    fi
+    wrapperJarPath="$BASE_DIR/.mvn/wrapper/mave
