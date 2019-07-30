@@ -229,4 +229,7 @@ else
     fi
 
     if command -v wget > /dev/null; then
- 
+        if [ "$MVNW_VERBOSE" = true ]; then
+          echo "Found wget ... using wget"
+        fi
+        if [ -z "$MVNW_USERNAME" ] 
