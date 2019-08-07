@@ -249,4 +249,7 @@ else
 
     else
         if [ "$MVNW_VERBOSE" = true ]; then
-       
+          echo "Falling back to using Java to download"
+        fi
+        javaClass="$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.java"
+        # 
