@@ -255,4 +255,7 @@ else
         # For Cygwin, switch paths to Windows format before running javac
         if $cygwin; then
           javaClass=`cygpath --path --windows "$javaClass"`
-   
+        fi
+        if [ -e "$javaClass" ]; then
+            if [ ! -e "$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.class" ]; then
+           
