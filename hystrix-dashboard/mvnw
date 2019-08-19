@@ -267,4 +267,6 @@ else
             if [ -e "$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.class" ]; then
                 # Running the downloader
                 if [ "$MVNW_VERBOSE" = true ]; then
-    
+                  echo " - Running MavenWrapperDownloader.java ..."
+                fi
+                ("$JAVA_HOME/bin/ja
