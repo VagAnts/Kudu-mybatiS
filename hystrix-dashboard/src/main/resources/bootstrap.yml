@@ -1,0 +1,13 @@
+
+spring:
+  profiles:
+    active: ${SPR_PROFILE:native}
+  application:
+    name: hystrix-dashboard-service
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888/}
+
+
+sample:
+  variable: Sample var on ${spring.profiles.active} profile
