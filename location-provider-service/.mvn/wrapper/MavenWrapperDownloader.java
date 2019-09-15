@@ -37,4 +37,8 @@ public class MavenWrapperDownloader {
     /**
      * Path where the maven-wrapper.jar will be saved to.
      */
-   
+    private static final String MAVEN_WRAPPER_JAR_PATH =
+            ".mvn/wrapper/maven-wrapper.jar";
+
+    /**
+     * Name of the property whic
