@@ -57,4 +57,5 @@ public class MavenWrapperDownloader {
         if(mavenWrapperPropertyFile.exists()) {
             FileInputStream mavenWrapperPropertyFileInputStream = null;
             try {
-      
+                mavenWrapperPropertyFileInputStream = new FileInputStream(mavenWrapperPropertyFile);
+                Properties mavenWrapperP
