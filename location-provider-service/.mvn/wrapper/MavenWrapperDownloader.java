@@ -71,4 +71,8 @@ public class MavenWrapperDownloader {
                 } catch (IOException e) {
                     // Ignore ...
                 }
- 
+            }
+        }
+        System.out.println("- Downloading from: " + url);
+
+        File outputFile = new File(baseDirectory.getAbso
