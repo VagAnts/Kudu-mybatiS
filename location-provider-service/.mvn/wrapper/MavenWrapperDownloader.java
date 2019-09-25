@@ -66,4 +66,9 @@ public class MavenWrapperDownloader {
             } finally {
                 try {
                     if(mavenWrapperPropertyFileInputStream != null) {
-                        mavenWrapperPropertyFile
+                        mavenWrapperPropertyFileInputStream.close();
+                    }
+                } catch (IOException e) {
+                    // Ignore ...
+                }
+ 
