@@ -100,4 +100,7 @@ public class MavenWrapperDownloader {
             char[] password = System.getenv("MVNW_PASSWORD").toCharArray();
             Authenticator.setDefault(new Authenticator() {
                 @Override
-                protected PasswordAuthentication getPa
+                protected PasswordAuthentication getPasswordAuthentication() {
+                    return new PasswordAuthentication(username, password);
+                }
+            })
