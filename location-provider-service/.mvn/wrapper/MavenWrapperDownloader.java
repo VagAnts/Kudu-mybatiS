@@ -103,4 +103,8 @@ public class MavenWrapperDownloader {
                 protected PasswordAuthentication getPasswordAuthentication() {
                     return new PasswordAuthentication(username, password);
                 }
-            })
+            });
+        }
+        URL website = new URL(urlString);
+        ReadableByteChannel rbc;
+        rbc = Channels.newChannel(website.ope
