@@ -104,4 +104,10 @@ goto endDetectBaseDir
 
 :baseDirNotFound
 set MAVEN_PROJECTBASEDIR=%EXEC_DIR%
-cd
+cd "%EXEC_DIR%"
+
+:endDetectBaseDir
+
+IF NOT EXIST "%MAVEN_PROJECTBASEDIR%\.mvn\jvm.config" goto endReadAdditionalConfig
+
+@setlocal Enabl
