@@ -10,4 +10,8 @@
     </parent>
     <groupId>com.rsakin.getaxi</groupId>
     <artifactId>location-provider-service</artifactId>
-    <version>0.0.1-SNAPSHOT</ve
+    <version>0.0.1-SNAPSHOT</version>
+    <name>location-provider-service</name>
+    <description>Location provider service for getaxi app</description>
+
+    <prope
