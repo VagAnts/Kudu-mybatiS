@@ -14,4 +14,10 @@
     <name>location-provider-service</name>
     <description>Location provider service for getaxi app</description>
 
-    <prope
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.s
