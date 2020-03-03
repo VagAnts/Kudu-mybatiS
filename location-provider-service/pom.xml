@@ -61,4 +61,10 @@
             <groupId>org.modelmapper</groupId>
             <artifactId>modelmapper</artifactId>
             <version>2.1.0</version>
-            <scope>compile
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>location-consumer-service</finalName>
+       
