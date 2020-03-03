@@ -48,4 +48,7 @@
             <version>6.8.6</version>
         </dependency>
         <dependency>
-            <grou
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        
