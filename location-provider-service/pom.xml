@@ -40,4 +40,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>tr
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+       
