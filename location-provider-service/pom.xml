@@ -67,4 +67,7 @@
 
     <build>
         <finalName>location-consumer-service</finalName>
-       
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-mav
