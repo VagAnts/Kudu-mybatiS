@@ -11,3 +11,6 @@
 //public class ElasticClientService extends AbstractElasticsearchConfiguration {
 //
 //    @Override
+//    @Bean
+//    public RestHighLevelClient elasticsearchClient() {
+//        final ClientConfiguration clientConfiguration = Clien
