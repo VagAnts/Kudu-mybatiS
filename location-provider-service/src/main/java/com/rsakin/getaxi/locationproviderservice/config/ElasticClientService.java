@@ -5,4 +5,9 @@
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.data.elasticsearch.client.ClientConfiguration;
 //import org.springframework.data.elasticsearch.client.RestClients;
-//import org.springframework.data.elasticsearch.config.AbstractElasticsearchCo
+//import org.springframework.data.elasticsearch.config.AbstractElasticsearchConfiguration;
+//
+//@Configuration
+//public class ElasticClientService extends AbstractElasticsearchConfiguration {
+//
+//    @Override
