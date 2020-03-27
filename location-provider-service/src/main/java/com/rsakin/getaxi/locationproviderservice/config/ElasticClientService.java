@@ -15,4 +15,7 @@
 //    public RestHighLevelClient elasticsearchClient() {
 //        final ClientConfiguration clientConfiguration = ClientConfiguration.builder()
 //                .connectedTo("localhost:9200").build();
-//        return RestClients.create(client
+//        return RestClients.create(clientConfiguration).rest();
+//    }
+//}
+
