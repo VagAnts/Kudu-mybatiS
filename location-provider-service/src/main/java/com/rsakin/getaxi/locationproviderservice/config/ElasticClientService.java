@@ -13,4 +13,6 @@
 //    @Override
 //    @Bean
 //    public RestHighLevelClient elasticsearchClient() {
-//        final ClientConfiguration clientConfiguration = Clien
+//        final ClientConfiguration clientConfiguration = ClientConfiguration.builder()
+//                .connectedTo("localhost:9200").build();
+//        return RestClients.create(client
