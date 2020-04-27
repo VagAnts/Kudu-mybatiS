@@ -26,4 +26,7 @@ public class KafkaConsumerConfig {
     // -----------------------------------------------------------------------------------------------------------------
     // String consuming
     @Bean
-    p
+    public ConsumerFactory<String, String> consumerFactory() {
+        Map<String, Object> config = new HashMap<>();
+
+  
