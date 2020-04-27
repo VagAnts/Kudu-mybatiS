@@ -23,4 +23,7 @@ public class KafkaConsumerConfig {
     @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
 
-    // ------------------------------
+    // -----------------------------------------------------------------------------------------------------------------
+    // String consuming
+    @Bean
+    p
