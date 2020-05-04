@@ -44,4 +44,7 @@ public class KafkaConsumerConfig {
         return factory;
     }
 
-    // -------------------------------------------------
+    // -----------------------------------------------------------------------------------------------------------------
+    // Location consuming
+    @Bean
+    public ConsumerFactory<String, List<L
