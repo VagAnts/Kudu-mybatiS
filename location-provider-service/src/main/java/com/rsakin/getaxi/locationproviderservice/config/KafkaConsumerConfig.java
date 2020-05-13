@@ -47,4 +47,7 @@ public class KafkaConsumerConfig {
     // -----------------------------------------------------------------------------------------------------------------
     // Location consuming
     @Bean
-    public ConsumerFactory<String, List<L
+    public ConsumerFactory<String, List<LocationDTO>> locationConsumerFactory() {
+        Map<String, Object> config = new HashMap<>();
+
+        config.pu
