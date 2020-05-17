@@ -55,4 +55,7 @@ public class KafkaConsumerConfig {
         config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
 
-        JsonDeserializer<List<LocationDTO>> locationJsonDeserializer = new JsonDeserializer<>
+        JsonDeserializer<List<LocationDTO>> locationJsonDeserializer = new JsonDeserializer<>(List.class, false);
+        locationJsonDeserializer.addTrustedPackages("*");
+
+        return new DefaultKafkaConsumerFactory<
