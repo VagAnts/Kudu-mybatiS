@@ -50,4 +50,6 @@ public class KafkaConsumerConfig {
     public ConsumerFactory<String, List<LocationDTO>> locationConsumerFactory() {
         Map<String, Object> config = new HashMap<>();
 
-        config.pu
+        config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+        config.put(ConsumerConfig.GROUP_ID_CONFIG, "group_json");
+        conf
