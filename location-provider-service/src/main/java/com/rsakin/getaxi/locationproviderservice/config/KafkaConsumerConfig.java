@@ -66,4 +66,5 @@ public class KafkaConsumerConfig {
     }
 
     @Bean
- 
+    public ConcurrentKafkaListenerContainerFactory<String, List<LocationDTO>> locationKafkaListenerFactory() {
+        C
