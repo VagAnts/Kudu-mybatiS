@@ -67,4 +67,5 @@ public class KafkaConsumerConfig {
 
     @Bean
     public ConcurrentKafkaListenerContainerFactory<String, List<LocationDTO>> locationKafkaListenerFactory() {
-        C
+        ConcurrentKafkaListenerContainerFactory<String, List<LocationDTO>> factory = new ConcurrentKafkaListenerContainerFactory<>();
+ 
