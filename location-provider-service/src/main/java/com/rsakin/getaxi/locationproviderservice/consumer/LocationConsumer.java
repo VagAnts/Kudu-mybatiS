@@ -18,4 +18,6 @@ public class LocationConsumer {
 
     private final LocationService locationService;
 
-    @KafkaListener(topics = "t_locations", containerFactory = "locationKafkaListenerFactory", groupId
+    @KafkaListener(topics = "t_locations", containerFactory = "locationKafkaListenerFactory", groupId = "group_json")
+    public void consumeLocations(List<Map<String, Object>> locationMap) {
+        log.info("Consumed Location Map : {}", 
