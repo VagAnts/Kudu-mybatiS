@@ -20,4 +20,8 @@ public class LocationConsumer {
 
     @KafkaListener(topics = "t_locations", containerFactory = "locationKafkaListenerFactory", groupId = "group_json")
     public void consumeLocations(List<Map<String, Object>> locationMap) {
-        log.info("Consumed Location Map : {}", 
+        log.info("Consumed Location Map : {}", locationMap);
+
+        locationMap.forEach(stringObjectMap -> {
+            Integer userId = (Integer) stringObjectMap.get("userId");
+           
