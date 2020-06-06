@@ -16,4 +16,6 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class LocationConsumer {
 
-    private
+    private final LocationService locationService;
+
+    @KafkaListener(topics = "t_locations", containerFactory = "locationKafkaListenerFactory", groupId
