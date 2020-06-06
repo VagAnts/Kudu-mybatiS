@@ -6,4 +6,14 @@ import com.rsakin.getaxi.locationproviderservice.service.LocationService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.stereotype.Ser
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Map;
+
+@Slf4j
+@Service
+@RequiredArgsConstructor
+public class LocationConsumer {
+
+    private
