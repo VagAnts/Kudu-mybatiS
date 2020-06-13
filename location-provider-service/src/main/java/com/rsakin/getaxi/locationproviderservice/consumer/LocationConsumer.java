@@ -32,4 +32,7 @@ public class LocationConsumer {
                 // if location is already there, update it
                 byUserId.setLatitude(latitude);
                 byUserId.setLongitude(longitude);
-             
+                locationService.save(byUserId);
+            } catch (LocationNotFoundException ex) {
+                // when location not found, save it
+    
