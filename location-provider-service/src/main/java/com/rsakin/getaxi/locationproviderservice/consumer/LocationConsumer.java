@@ -26,4 +26,7 @@ public class LocationConsumer {
             Integer userId = (Integer) stringObjectMap.get("userId");
             Integer latitude = (Integer) stringObjectMap.get("latitude");
             Integer longitude = (Integer) stringObjectMap.get("longitude");
-     
+            try {
+
+                Location byUserId = locationService.getByUserId(userId);
+                // if location is already there,
