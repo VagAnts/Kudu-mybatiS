@@ -35,4 +35,6 @@ public class LocationConsumer {
                 locationService.save(byUserId);
             } catch (LocationNotFoundException ex) {
                 // when location not found, save it
-    
+                Location newLocation = new Location();
+                newLocation.setUserId(userId);
+                newLocatio
