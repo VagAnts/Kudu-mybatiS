@@ -29,4 +29,7 @@ public class LocationConsumer {
             try {
 
                 Location byUserId = locationService.getByUserId(userId);
-                // if location is already there,
+                // if location is already there, update it
+                byUserId.setLatitude(latitude);
+                byUserId.setLongitude(longitude);
+             
