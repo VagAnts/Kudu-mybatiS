@@ -37,4 +37,6 @@ public class LocationConsumer {
                 // when location not found, save it
                 Location newLocation = new Location();
                 newLocation.setUserId(userId);
-                newLocatio
+                newLocation.setLatitude(latitude);
+                newLocation.setLongitude(longitude);
+                locationService.save(new
