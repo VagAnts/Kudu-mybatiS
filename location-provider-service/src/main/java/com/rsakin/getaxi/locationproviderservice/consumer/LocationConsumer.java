@@ -39,4 +39,10 @@ public class LocationConsumer {
                 newLocation.setUserId(userId);
                 newLocation.setLatitude(latitude);
                 newLocation.setLongitude(longitude);
-                locationService.save(new
+                locationService.save(newLocation);
+            }
+
+        });
+
+        log.info("Total number of locations before update : {}", locationMap.size());
+        log.info("T
