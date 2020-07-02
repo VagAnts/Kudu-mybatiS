@@ -45,4 +45,7 @@ public class LocationConsumer {
         });
 
         log.info("Total number of locations before update : {}", locationMap.size());
-        log.info("T
+        log.info("Total number of locations after update : {}", locationService.getAllLocations().size());
+    }
+
+}
