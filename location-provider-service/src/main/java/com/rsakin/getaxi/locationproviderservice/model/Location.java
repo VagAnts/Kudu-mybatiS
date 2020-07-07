@@ -11,4 +11,8 @@ public class Location {
 
     @Id
     private String id;
-    int
+    int userId;
+    long latitude;
+    long longitude;
+
+}
