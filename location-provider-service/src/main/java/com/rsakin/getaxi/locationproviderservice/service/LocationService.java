@@ -20,3 +20,27 @@ public class LocationService {
     public List<Location> getAllLocations() {
         Iterable<Location> all = locationRepository.findAll();
         List<Location> locationList = new ArrayList<>();
+        all.forEach(locationList::add);
+        return locationList;
+    }
+
+    public Location getById(String id) {
+        Optional<Location> byId = locationRepository.findById(id);
+        return byId.orElseThrow(() -> new LocationNotFoundException("for location id : " + id));
+    }
+
+    public Location getByUserId(int userId) {
+        Optional<Location> byUserId = locationRepository.findByUserId(userId);
+        return byUserId.orElseThrow(() -> new LocationNotFoundException("for user id : " + userId));
+    }
+
+    public Location save(Location location) {
+        return locationRepository.save(location);
+    }
+
+    public Boolean delete(Location location) {
+        Location byId = getById(location.getId());
+        locationRepository.delete(byId);
+        return true;
+    }
+}
