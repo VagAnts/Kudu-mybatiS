@@ -92,4 +92,10 @@ if [ -z "$M2_HOME" ] ; then
   M2_HOME=`dirname "$PRG"`/..
 
   # make it fully qualified
-  M2_HOME=`cd "$M2_HO
+  M2_HOME=`cd "$M2_HOME" && pwd`
+
+  cd "$saveddir"
+  # echo Using m2 at $M2_HOME
+fi
+
+# For Cygwin, ensure paths are in UNIX format before anyth
