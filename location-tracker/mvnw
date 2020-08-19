@@ -167,4 +167,12 @@ find_maven_basedir() {
 
   if [ -z "$1" ]
   then
-    echo "Path not specified to find_maven
+    echo "Path not specified to find_maven_basedir"
+    return 1
+  fi
+
+  basedir="$1"
+  wdir="$1"
+  while [ "$wdir" != '/' ] ; do
+    if [ -d "$wdir"/.mvn ] ; then
+     
