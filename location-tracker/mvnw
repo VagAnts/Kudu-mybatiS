@@ -271,3 +271,9 @@ else
                 fi
                 ("$JAVA_HOME/bin/java" -cp .mvn/wrapper MavenWrapperDownloader "$MAVEN_PROJECTBASEDIR")
             fi
+        fi
+    fi
+fi
+##########################################################################################
+# End of extension
+###
