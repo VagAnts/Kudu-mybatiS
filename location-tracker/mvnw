@@ -293,4 +293,8 @@ if $cygwin; then
   [ -n "$CLASSPATH" ] &&
     CLASSPATH=`cygpath --path --windows "$CLASSPATH"`
   [ -n "$MAVEN_PROJECTBASEDIR" ] &&
-    MAVEN_PROJECTB
+    MAVEN_PROJECTBASEDIR=`cygpath --path --windows "$MAVEN_PROJECTBASEDIR"`
+fi
+
+# Provide a "standardized" way to retrieve the CLI args that will
+# wo
