@@ -11,4 +11,9 @@
 	<groupId>com.rsakin.getaxi</groupId>
 	<artifactId>location-tracker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>location-tracker</
+	<name>location-tracker</name>
+	<description>location-tracker for getaxi app</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-cloud.v
