@@ -62,4 +62,8 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>location-tracker-service-1.0-
+		<finalName>location-tracker-service-1.0-RELEASE</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-
