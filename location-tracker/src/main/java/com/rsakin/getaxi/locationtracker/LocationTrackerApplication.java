@@ -10,3 +10,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @EnableFeignClients
 public class LocationTrackerApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LocationTrackerApplication.class, args);
+    }
+
+}
