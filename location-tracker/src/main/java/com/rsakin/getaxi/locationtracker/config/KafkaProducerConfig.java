@@ -23,4 +23,7 @@ public class KafkaProducerConfig {
 
     // Kafka String message consumer bean
     @Bean
-    public ProducerFactory
+    public ProducerFactory<String, String> stringProducerFactory() {
+        Map<String, Object> config = new HashMap<>();
+
+        config.put(ProducerConfig.BOOTSTRAP_SERVERS_
