@@ -34,3 +34,6 @@ public class KafkaProducerConfig {
     }
 
     @Bean
+    public KafkaTemplate<String, String> kafkaStringTemplate() {
+        return new KafkaTemplate<>(stringProducerFactory());
+    }
