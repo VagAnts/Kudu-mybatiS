@@ -41,4 +41,7 @@ public class KafkaProducerConfig {
     // Kafka To-do object consumer bean
     @Bean
     public ProducerFactory<String, Object> locationProducerFactory() {
-        Map<String, Object> config 
+        Map<String, Object> config = new HashMap<>();
+
+        config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+        config.put(ProducerConfig.KEY_SERIALIZER_CL
