@@ -37,3 +37,8 @@ public class KafkaProducerConfig {
     public KafkaTemplate<String, String> kafkaStringTemplate() {
         return new KafkaTemplate<>(stringProducerFactory());
     }
+
+    // Kafka To-do object consumer bean
+    @Bean
+    public ProducerFactory<String, Object> locationProducerFactory() {
+        Map<String, Object> config 
