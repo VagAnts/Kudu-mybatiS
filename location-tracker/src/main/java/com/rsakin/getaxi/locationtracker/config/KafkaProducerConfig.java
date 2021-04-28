@@ -52,4 +52,7 @@ public class KafkaProducerConfig {
 
     @Bean
     public KafkaTemplate<String, Object> kafkaTodoTemplate() {
-        return new KafkaTe
+        return new KafkaTemplate<>(locationProducerFactory());
+    }
+
+}
