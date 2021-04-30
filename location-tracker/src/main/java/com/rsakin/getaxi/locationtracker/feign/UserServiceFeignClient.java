@@ -7,4 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.naming.ServiceUnavailableException;
-import 
+import java.util.List;
+
+@FeignClient(value = "user-service-feign", url = "localhost:9001/api/user", fallback = UserSe
