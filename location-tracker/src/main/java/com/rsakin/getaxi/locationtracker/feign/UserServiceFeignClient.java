@@ -13,4 +13,6 @@ import java.util.List;
 public interface UserServiceFeignClient {
 
     @GetMapping(value = "/driver-locations")
-    ResponseEntity<List<L
+    ResponseEntity<List<Location>> getAllDriverLocations() throws ServiceUnavailableException;
+
+}
