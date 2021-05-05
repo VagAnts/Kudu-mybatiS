@@ -12,4 +12,9 @@
         <module>config-service</module>
         <module>zuul-gateway-service</module>
         <module>user-service</module>
-        <module>hystrix-dashboard</modul
+        <module>hystrix-dashboard</module>
+        <module>location-tracker</module>
+        <module>location-provider-service</module>
+    </modules>
+
+</project>
