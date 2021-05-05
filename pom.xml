@@ -5,4 +5,9 @@
     <groupId>com.rsakin.getaxi</groupId>
     <artifactId>getaxi-app</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>discovery-service</module>
+        <module>config-service</module>
+        <
