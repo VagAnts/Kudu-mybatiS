@@ -11,4 +11,9 @@
     </parent>
     <groupId>com.rsakin</groupId>
     <artifactId>user-service</artifactId>
-    <version>1.0.0</version
+    <version>1.0.0</version>
+    <name>user-service</name>
+    <description>User Service for GeTaxi Application</description>
+
+    <properties>
+        <java.version>1.
