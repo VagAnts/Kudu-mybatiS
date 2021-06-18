@@ -48,4 +48,6 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-        
+        <dependency>
+            <groupId>com.github.munerf.modelmapper-spring-boot-starter</groupId>
+            <artifactId>modelmapper-spring-boot-starter
