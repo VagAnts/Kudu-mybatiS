@@ -50,4 +50,8 @@
         </dependency>
         <dependency>
             <groupId>com.github.munerf.modelmapper-spring-boot-starter</groupId>
-            <artifactId>modelmapper-spring-boot-starter
+            <artifactId>modelmapper-spring-boot-starter</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.passay</groupId>
