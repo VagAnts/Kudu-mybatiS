@@ -109,4 +109,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <gr
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+         
