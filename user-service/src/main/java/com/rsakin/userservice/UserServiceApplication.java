@@ -18,4 +18,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCaching
-@EnableSwa
+@EnableSwagger2
+@EnableScheduling
+public class UserServiceApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(UserServiceApplication.cl
