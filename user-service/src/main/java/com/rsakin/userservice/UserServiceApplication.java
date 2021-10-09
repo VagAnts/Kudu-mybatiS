@@ -31,4 +31,8 @@ public class UserServiceApplication {
         return new BCryptPasswordEncoder();
     }
 
-    @Bea
+    @Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.ba
