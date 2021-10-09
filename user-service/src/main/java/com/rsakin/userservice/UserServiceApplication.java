@@ -23,4 +23,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class UserServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserServiceApplication.cl
+        SpringApplication.run(UserServiceApplication.class, args);
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bea
