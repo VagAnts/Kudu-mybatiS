@@ -35,4 +35,9 @@ public class UserServiceApplication {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.ba
+                .apis(RequestHandlerSelectors.basePackage("com.rsakin.userservice.controller"))
+                .paths(PathSelectors.any())
+                .build();
+    }
+
+ 
