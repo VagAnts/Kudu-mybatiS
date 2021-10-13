@@ -40,4 +40,7 @@ public class UserServiceApplication {
                 .build();
     }
 
- 
+    @Bean
+    public ResourceBundleMessageSource messageSource() {
+
+        ResourceBundleMessageSource source = new ResourceBundleMessageSource
