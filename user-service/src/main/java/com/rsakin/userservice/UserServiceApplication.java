@@ -43,4 +43,8 @@ public class UserServiceApplication {
     @Bean
     public ResourceBundleMessageSource messageSource() {
 
-        ResourceBundleMessageSource source = new ResourceBundleMessageSource
+        ResourceBundleMessageSource source = new ResourceBundleMessageSource();
+        source.setBasenames("messages/label");
+        source.setUseCodeAsDefaultMessage(true);
+
+        return source;
