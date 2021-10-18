@@ -48,3 +48,6 @@ public class UserServiceApplication {
         source.setUseCodeAsDefaultMessage(true);
 
         return source;
+    }
+
+}
