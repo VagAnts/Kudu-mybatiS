@@ -7,4 +7,6 @@ import com.rsakin.userservice.service.UserService;
 import com.rsakin.userservice.simu.LocationSimulator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import o
+import org.hibernate.validator.constraints.Range;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframewor
