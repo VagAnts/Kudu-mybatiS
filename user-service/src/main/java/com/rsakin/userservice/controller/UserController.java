@@ -25,4 +25,10 @@ import java.util.Map;
 @Slf4j
 @RefreshScope
 @RequestMapping("/api/user")
-public class UserControlle
+public class UserController {
+
+    private final UserService userService;
+
+    private final MessageSource messageSource;
+
+    private final LocationSimul
