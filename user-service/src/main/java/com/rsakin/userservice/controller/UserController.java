@@ -31,4 +31,8 @@ public class UserController {
 
     private final MessageSource messageSource;
 
-    private final LocationSimul
+    private final LocationSimulator locationSimulator;
+
+    @GetMapping("/welcome")
+    public void welcome() {
+        log.info("label_de.properties : {}", m
