@@ -37,4 +37,8 @@ public class UserController {
     public void welcome() {
         log.info("label_de.properties : {}", messageSource.getMessage("welcome.message",
                 new Object[]{""}, Locale.GERMAN));
-        log.info("label.properties : 
+        log.info("label.properties : {}", messageSource.getMessage("welcome.message",
+                new Object[]{""}, Locale.ENGLISH));
+    }
+
+    @GetMapping("/al
