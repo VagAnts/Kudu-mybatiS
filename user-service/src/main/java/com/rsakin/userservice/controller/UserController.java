@@ -41,4 +41,7 @@ public class UserController {
                 new Object[]{""}, Locale.ENGLISH));
     }
 
-    @GetMapping("/al
+    @GetMapping("/all")
+    public ResponseEntity<List<UserDTO>> getAll() {
+        List<UserDTO> all = userService.getAll();
+        return 
