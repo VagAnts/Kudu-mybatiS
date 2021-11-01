@@ -44,4 +44,8 @@ public class UserController {
     @GetMapping("/all")
     public ResponseEntity<List<UserDTO>> getAll() {
         List<UserDTO> all = userService.getAll();
-        return 
+        return new ResponseEntity<>(all, HttpStatus.OK);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<UserDTO> getById(@PathVariable @Range(min =
