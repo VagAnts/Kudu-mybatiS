@@ -48,4 +48,9 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<UserDTO> getById(@PathVariable @Range(min =
+    public ResponseEntity<UserDTO> getById(@PathVariable @Range(min = 1) Integer id) {
+        UserDTO one = userService.getOne(id);
+        return new ResponseEntity<>(one, HttpStatus.OK);
+    }
+
+    @GetMappin
