@@ -53,4 +53,6 @@ public class UserController {
         return new ResponseEntity<>(one, HttpStatus.OK);
     }
 
-    @GetMappin
+    @GetMapping("/user-by-email/{email}")
+    public ResponseEntity<UserDTO> getByEmail(@PathVariable @Email String email) {
+        UserDTO use
