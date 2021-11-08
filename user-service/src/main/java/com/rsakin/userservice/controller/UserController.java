@@ -61,4 +61,9 @@ public class UserController {
 
     @PostMapping("/create")
     public ResponseEntity<UserDTO> save(@RequestBody @Valid User user) {
-        UserDTO actual = 
+        UserDTO actual = userService.addOne(user);
+        return new ResponseEntity<>(actual, HttpStatus.CREATED);
+    }
+
+    @PutMapping("/update")
+    public Resp
