@@ -59,4 +59,6 @@ public class UserController {
         return new ResponseEntity<>(userByEmail, HttpStatus.OK);
     }
 
-    @PostMapping(
+    @PostMapping("/create")
+    public ResponseEntity<UserDTO> save(@RequestBody @Valid User user) {
+        UserDTO actual = 
