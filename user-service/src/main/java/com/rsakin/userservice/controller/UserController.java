@@ -66,4 +66,6 @@ public class UserController {
     }
 
     @PutMapping("/update")
-    public Resp
+    public ResponseEntity<UserDTO> update(@RequestBody @Valid User user) {
+        UserDTO actual = userService.updateOne(user);
+        return new Re
