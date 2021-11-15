@@ -68,4 +68,8 @@ public class UserController {
     @PutMapping("/update")
     public ResponseEntity<UserDTO> update(@RequestBody @Valid User user) {
         UserDTO actual = userService.updateOne(user);
-        return new Re
+        return new ResponseEntity<>(actual, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Map<String, String>> delete(@Pat
