@@ -72,4 +72,6 @@ public class UserController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Map<String, String>> delete(@Pat
+    public ResponseEntity<Map<String, String>> delete(@PathVariable @Range(min = 1) Integer id) {
+        Map<String, String> stringStringMap = userService.deleteOne(id);
+        re
