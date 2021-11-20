@@ -78,4 +78,5 @@ public class UserController {
     }
 
     @GetMapping("/all/address/{id}")
-    public ResponseEntity<List<Us
+    public ResponseEntity<List<UserDTO>> getAllUsersWithAddress(@PathVariable @Range(min = 1, max = 200) Integer id) {
+        List<UserDTO> usersByAddress = userService.getUsersByA
