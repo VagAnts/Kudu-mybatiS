@@ -79,4 +79,8 @@ public class UserController {
 
     @GetMapping("/all/address/{id}")
     public ResponseEntity<List<UserDTO>> getAllUsersWithAddress(@PathVariable @Range(min = 1, max = 200) Integer id) {
-        List<UserDTO> usersByAddress = userService.getUsersByA
+        List<UserDTO> usersByAddress = userService.getUsersByAddress(id);
+        return new ResponseEntity<>(usersByAddress, HttpStatus.OK);
+    }
+
+    @GetMapping("/all/address/city/{city_nam
