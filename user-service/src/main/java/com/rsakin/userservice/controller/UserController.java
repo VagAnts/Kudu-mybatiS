@@ -83,4 +83,6 @@ public class UserController {
         return new ResponseEntity<>(usersByAddress, HttpStatus.OK);
     }
 
-    @GetMapping("/all/address/city/{city_nam
+    @GetMapping("/all/address/city/{city_name}")
+    public ResponseEntity<List<UserDTO>> getAllUsersWithAddress(@PathVariable String city_name) {
+        List<UserDTO>
