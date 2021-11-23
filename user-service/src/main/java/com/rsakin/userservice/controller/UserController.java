@@ -85,4 +85,5 @@ public class UserController {
 
     @GetMapping("/all/address/city/{city_name}")
     public ResponseEntity<List<UserDTO>> getAllUsersWithAddress(@PathVariable String city_name) {
-        List<UserDTO>
+        List<UserDTO> usersByAddressCityName = userService.getUsersByAddressCityName(city_name);
+        return new ResponseEntity<>(usersByAddressCityName,
