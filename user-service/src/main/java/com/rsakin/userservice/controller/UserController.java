@@ -95,4 +95,6 @@ public class UserController {
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
-    @GetM
+    @GetMapping("/driver-locations")
+    public ResponseEntity<List<Location>> getAllDriverLocations() {
+        List<Location> allDriverL
