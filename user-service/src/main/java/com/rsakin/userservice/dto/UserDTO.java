@@ -10,4 +10,10 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 @Data
-@Bu
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserDTO implements Serializable {
+
+    private Integer id;
+    private String nam
