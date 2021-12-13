@@ -20,4 +20,10 @@ public class Address implements Serializable {
     private Integer id;
 
     @NotNull(message = "City can not be null")
-    private String cit
+    private String city;
+
+    @NotNull(message = "Street can not be null")
+    private String street;
+
+    @Column(name = "building_no")
+    private Integer buildingNo;
