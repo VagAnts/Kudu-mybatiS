@@ -16,4 +16,8 @@ import java.io.Serializable;
 public class Address implements Serializable {
 
     @Id
-    @Generate
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @NotNull(message = "City can not be null")
+    private String cit
