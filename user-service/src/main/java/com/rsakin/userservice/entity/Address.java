@@ -27,3 +27,8 @@ public class Address implements Serializable {
 
     @Column(name = "building_no")
     private Integer buildingNo;
+
+    @Column(name = "door_no")
+    private Integer doorNo;
+
+}
