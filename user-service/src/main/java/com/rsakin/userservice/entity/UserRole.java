@@ -1,3 +1,6 @@
 package com.rsakin.userservice.entity;
 
-public
+public enum UserRole {
+    PASSENGER,
+    DRIVER;
+}
