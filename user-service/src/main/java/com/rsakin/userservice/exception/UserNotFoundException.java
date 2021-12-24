@@ -1,3 +1,5 @@
 package com.rsakin.userservice.exception;
 
-public cl
+public class UserNotFoundException extends NotFoundException {
+    public UserNotFoundException(Integer id) {
+        super("User not found by 
