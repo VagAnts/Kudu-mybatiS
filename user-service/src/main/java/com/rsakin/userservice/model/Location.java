@@ -4,4 +4,11 @@ import lombok.*;
 
 @Data
 @AllArgsConstructor
-@No
+@NoArgsConstructor
+@Builder
+@ToString
+@EqualsAndHashCode
+public class Location {
+
+    private int userId;
+    private long latitud
