@@ -11,4 +11,7 @@ import lombok.*;
 public class Location {
 
     private int userId;
-    private long latitud
+    private long latitude;
+    private long longitude;
+
+}
