@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repo
+@Repository
+public interface AddressRepository extends JpaRepository<Address, Integer> {
+    List<Address> getAllByCity(String
