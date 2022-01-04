@@ -8,4 +8,8 @@ import java.util.List;
 
 @Repository
 public interface AddressRepository extends JpaRepository<Address, Integer> {
-    List<Address> getAllByCity(String
+    List<Address> getAllByCity(String city);
+
+    List<Address> getAllByBuildingNoAndDoorNo(Integer buildingNo, Integer doorNo);
+
+    Address getFirstByCityContaining
