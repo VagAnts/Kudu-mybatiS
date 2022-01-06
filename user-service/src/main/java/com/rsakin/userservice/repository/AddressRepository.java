@@ -12,4 +12,5 @@ public interface AddressRepository extends JpaRepository<Address, Integer> {
 
     List<Address> getAllByBuildingNoAndDoorNo(Integer buildingNo, Integer doorNo);
 
-    Address getFirstByCityContaining
+    Address getFirstByCityContaining(String city_prefix);
+}
