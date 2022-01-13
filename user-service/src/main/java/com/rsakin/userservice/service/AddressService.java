@@ -4,4 +4,12 @@ import com.rsakin.userservice.entity.Address;
 
 import java.util.List;
 
-public interface AddressS
+public interface AddressService {
+
+    List<Address> getAll();
+
+    Address getOne(Integer id);
+
+    Address addOne(Address address);
+
+    Address updateOne(Address address);
