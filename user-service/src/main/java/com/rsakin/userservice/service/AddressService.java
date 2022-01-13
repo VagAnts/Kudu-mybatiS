@@ -13,3 +13,6 @@ public interface AddressService {
     Address addOne(Address address);
 
     Address updateOne(Address address);
+
+    boolean deleteOne(Integer id);
+}
