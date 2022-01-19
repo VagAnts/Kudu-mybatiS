@@ -10,4 +10,11 @@ import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.co
+import java.util.concurrent.ConcurrentHashMap;
+
+@Slf4j
+@Service
+@RequiredArgsConstructor
+public class LocationSimulator {
+
+    private final UserService 
