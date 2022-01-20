@@ -17,4 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @RequiredArgsConstructor
 public class LocationSimulator {
 
-    private final UserService 
+    private final UserService userService;
+    private Map<Integer, Location> driversLocationCache = new ConcurrentHashMap<>();
+
+    // Turkey latitude-l
