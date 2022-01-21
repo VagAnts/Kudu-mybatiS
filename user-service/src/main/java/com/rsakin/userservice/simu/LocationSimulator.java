@@ -23,4 +23,8 @@ public class LocationSimulator {
     // Turkey latitude-longitude coordinates
     private static final double MIN_LAT = 36;
     private static final double MAX_LAT = 42;
-    private static 
+    private static final double MIN_LONG = 26;
+    private static final double MAX_LONG = 45;
+
+    // run every 60 secs
+    @Scheduled(fixedRate 
