@@ -20,4 +20,7 @@ public class LocationSimulator {
     private final UserService userService;
     private Map<Integer, Location> driversLocationCache = new ConcurrentHashMap<>();
 
-    // Turkey latitude-l
+    // Turkey latitude-longitude coordinates
+    private static final double MIN_LAT = 36;
+    private static final double MAX_LAT = 42;
+    private static 
