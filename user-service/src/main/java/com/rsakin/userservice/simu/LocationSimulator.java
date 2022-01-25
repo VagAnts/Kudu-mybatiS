@@ -27,4 +27,8 @@ public class LocationSimulator {
     private static final double MAX_LONG = 45;
 
     // run every 60 secs
-    @Scheduled(fixedRate 
+    @Scheduled(fixedRate = 60 * 1000)
+    public void simulateDriverLocations() {
+        logCronTime();
+        // get all available drivers
+        List<User> allDrivers = 
