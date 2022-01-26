@@ -31,4 +31,6 @@ public class LocationSimulator {
     public void simulateDriverLocations() {
         logCronTime();
         // get all available drivers
-        List<User> allDrivers = 
+        List<User> allDrivers = userService.getAllDrivers();
+        simulateLocations(allDrivers);
+        log.info("Updated locations ---> " + driversLocationCache.toS
