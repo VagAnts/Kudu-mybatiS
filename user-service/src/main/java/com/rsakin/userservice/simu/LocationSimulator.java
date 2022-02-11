@@ -43,4 +43,6 @@ public class LocationSimulator {
             Location location = Location.builder()
                     .userId(driver.getId())
                     .latitude(getRandomLocation(MIN_LAT, MAX_LAT))
-        
+                    .longitude(getRandomLocation(MIN_LONG, MAX_LONG))
+                    .build();
+            driversLocationCac
