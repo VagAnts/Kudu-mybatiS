@@ -40,4 +40,7 @@ public class LocationSimulator {
     // TODO : location simulations can be consistent
     private void simulateLocations(List<User> allDrivers) {
         allDrivers.forEach(driver -> {
-            Location location = Loca
+            Location location = Location.builder()
+                    .userId(driver.getId())
+                    .latitude(getRandomLocation(MIN_LAT, MAX_LAT))
+        
