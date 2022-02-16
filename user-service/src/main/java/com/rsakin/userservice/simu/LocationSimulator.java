@@ -45,4 +45,9 @@ public class LocationSimulator {
                     .latitude(getRandomLocation(MIN_LAT, MAX_LAT))
                     .longitude(getRandomLocation(MIN_LONG, MAX_LONG))
                     .build();
-            driversLocationCac
+            driversLocationCache.put(driver.getId(), location);
+        });
+    }
+
+    private int getRandomLocation(double min, double max) {
+        Random rand
