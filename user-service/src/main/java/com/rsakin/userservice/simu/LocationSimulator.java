@@ -57,4 +57,8 @@ public class LocationSimulator {
     private void logCronTime() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         Date now = new Date();
-        String strDate = sdf.format(n
+        String strDate = sdf.format(now);
+        log.info("Cron job triggered at :: " + strDate);
+    }
+
+    // TODO : test the locations can be mod
