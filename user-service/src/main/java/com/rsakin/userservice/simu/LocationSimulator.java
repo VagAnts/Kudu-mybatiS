@@ -61,4 +61,9 @@ public class LocationSimulator {
         log.info("Cron job triggered at :: " + strDate);
     }
 
-    // TODO : test the locations can be mod
+    // TODO : test the locations can be modified ?
+    public List<Location> getAllDriverLocations() {
+        return new ArrayList<>(driversLocationCache.values());
+    }
+
+}
