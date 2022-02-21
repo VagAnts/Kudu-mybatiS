@@ -8,4 +8,7 @@ import javax.validation.ConstraintValidatorContext;
 import java.util.Arrays;
 import java.util.List;
 
-public c
+public class PasswordConstraintValidator implements ConstraintValidator<ValidPassword, String> {
+
+    @Override
+    public boolean isV
