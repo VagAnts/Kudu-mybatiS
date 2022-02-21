@@ -11,4 +11,6 @@ import java.util.List;
 public class PasswordConstraintValidator implements ConstraintValidator<ValidPassword, String> {
 
     @Override
-    public boolean isV
+    public boolean isValid(String password, ConstraintValidatorContext context) {
+        // Constraint rule set
+        PasswordValidato
