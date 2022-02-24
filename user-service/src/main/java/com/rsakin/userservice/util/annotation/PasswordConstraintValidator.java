@@ -15,4 +15,6 @@ public class PasswordConstraintValidator implements ConstraintValidator<ValidPas
         // Constraint rule set
         PasswordValidator validator = new PasswordValidator(Arrays.asList(
                 // needs at least 8 characters and at most 100 chars
-                new LengthRule(8, 1
+                new LengthRule(8, 100),
+                // at least one upper-case character
+                new CharacterRule(EnglishCharacterData.UpperCase, 1),
