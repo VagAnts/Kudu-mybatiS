@@ -22,4 +22,7 @@ public class PasswordConstraintValidator implements ConstraintValidator<ValidPas
                 new CharacterRule(EnglishCharacterData.LowerCase, 1),
                 // at least one digit character
                 new CharacterRule(EnglishCharacterData.Digit, 1),
-                // at le
+                // at least one symbol (special character)
+                new CharacterRule(EnglishCharacterData.Special, 1),
+                // no whitespace
+    
