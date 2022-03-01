@@ -33,4 +33,7 @@ public class PasswordConstraintValidator implements ConstraintValidator<ValidPas
             return true;
         }
         // if not valid, set messages
-        List<Stri
+        List<String> messages = validator.getMessages(result);
+        String messageTemplate = String.join(",", messages);
+
+        throw new NotValid
