@@ -29,3 +29,8 @@ public class PasswordConstraintValidator implements ConstraintValidator<ValidPas
         ));
         // validating password with rule set
         RuleResult result = validator.validate(new PasswordData(password));
+        if (result.isValid()) {
+            return true;
+        }
+        // if not valid, set messages
+        List<Stri
