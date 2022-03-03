@@ -36,4 +36,6 @@ public class PasswordConstraintValidator implements ConstraintValidator<ValidPas
         List<String> messages = validator.getMessages(result);
         String messageTemplate = String.join(",", messages);
 
-        throw new NotValid
+        throw new NotValidPasswordException(messageTemplate);
+    }
+}
