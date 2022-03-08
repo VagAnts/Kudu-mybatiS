@@ -18,4 +18,10 @@ CREATE TABLE users(
     username VARCHAR(20) NOT NULL,
     email VARCHAR(20) UNIQUE,
     password varchar(100) NOT NULL,
-    role varchar(15) NOT NULL
+    role varchar(15) NOT NULL,
+    address_id INT,
+    FOREIGN KEY (address_id) REFERENCES address(id)
+);
+
+-- Sample test data insertions
+INSERT INTO address 
