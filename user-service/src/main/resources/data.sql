@@ -24,4 +24,5 @@ CREATE TABLE users(
 );
 
 -- Sample test data insertions
-INSERT INTO address 
+INSERT INTO address ( city, street, building_no, door_no) VALUES    ( 'Malatya', 'Ayvalık Sokagı', 3, 5 ),
+                                             
