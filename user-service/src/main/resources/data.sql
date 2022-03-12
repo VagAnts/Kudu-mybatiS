@@ -28,4 +28,5 @@ INSERT INTO address ( city, street, building_no, door_no) VALUES    ( 'Malatya',
                                                                     ( 'Afyon', 'Uluköy Sokagı', 45, 15 ),
                                                                     ( 'Afyon', 'Tepe Sokagı', 5, 15 ),
                                                                     ( 'Istanbul', 'Senlik Sokagı', 32, 55 ),
-          
+                                                                    ( 'Kocaeli', 'Pekcan Sokagı', 67, 12 ),
+                    
