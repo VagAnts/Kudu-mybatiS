@@ -26,4 +26,6 @@ CREATE TABLE users(
 -- Sample test data insertions
 INSERT INTO address ( city, street, building_no, door_no) VALUES    ( 'Malatya', 'Ayvalık Sokagı', 3, 5 ),
                                                                     ( 'Afyon', 'Uluköy Sokagı', 45, 15 ),
-                                                                    ( 'Afyon', 'Tepe S
+                                                                    ( 'Afyon', 'Tepe Sokagı', 5, 15 ),
+                                                                    ( 'Istanbul', 'Senlik Sokagı', 32, 55 ),
+          
