@@ -33,3 +33,4 @@ INSERT INTO address ( city, street, building_no, door_no) VALUES    ( 'Malatya',
 
 
 INSERT INTO users (name, lastname, username, password, role, address_id, email) VALUES      ( 'Admin', 'Test', 'adminuser', 'samplE_12345', 'PASSENGER', 1  , 'admin@mail.com' ),
+                                                                                            ( 'Selim', 'Canlı', 'basic', 's
