@@ -38,4 +38,5 @@ INSERT INTO users (name, lastname, username, password, role, address_id, email) 
                                                                                             ( 'Erdem', 'Canlı', 'basic', 'samplE_12345', 'DRIVER', 3  , 'erdemm@mail.com' ),
                                                                                             ( 'Cengiz', 'Arf', 'basic', 'samplE_12345', 'DRIVER', 5  , 'cengiz@mail.com' ),
                                                                                             ( 'Ferhat', 'Tapas', 'basic', 'samplE_12345', 'PASSENGER', 2  , 'ferhh@mail.com' ),
-                                                    
+                                                                                            ( 'Selim', 'Asaf', 'basic', 'samplE_12345', 'DRIVER', 5  , 'selim2@mail.com' ),
+                    
