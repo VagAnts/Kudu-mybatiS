@@ -191,3 +191,91 @@ class UserControllerTest {
 
         UserDTO returnedUser =
                 getSampleUserDTO(1, "new-name", "last", "username", "mail@com");
+
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(SerializationFeature.WRAP_ROOT_VALUE, false);
+        ObjectWriter ow = mapper.writer().withDefaultPrettyPrinter();
+        String requestJson = ow.writeValueAsString(stubUser);
+
+
+        // when
+        // changed name "name" to "new-name"
+        Mockito.doReturn(returnedUser).when(userService).updateOne(stubUser);
+
+        // then
+        String url = "/api/user/update";
+        mockMvc.perform(put(url)
+                .content(requestJson)
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(jsonPath("$.name", is(returnedUser.getName())));
+    }
+
+    @Test
+    void should_delete() throws Exception {
+        // stubbing
+        User stubUser = User.builder()
+                .id(1)
+                .name("name")
+                .lastname("last")
+                .email("mail@com")
+                .username("username")
+                .password("Asdsdf123*")
+                .build();
+
+        Map<String, String> response = new HashMap<>();
+        response.put("Deleted", Boolean.TRUE.toString());
+
+        // when
+        // changed name "name" to "new-name"
+        Mockito.doReturn(response).when(userService).deleteOne(stubUser.getId());
+
+        // then
+        String url = "/api/user/delete/{id}";
+        mockMvc.perform(delete(url, stubUser.getId()))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.Deleted", is(response.get("Deleted"))));
+
+    }
+
+    @Test
+    void should_getByAddressId() throws Exception {
+        // stub
+        List<UserDTO> userList = getSampleUserDtoList(5);
+        UserDTO stubUser = getSampleUserDTO(1, "name", "last", "user", "mail@com");
+
+        // when
+        Mockito.when(userService.getUsersByAddress(1))
+                .thenReturn(userList);
+
+        // then
+        String url = "/api/user/all/address/{id}";
+        mockMvc.perform(get(url, 1))
+                .andExpect(status().isOk())
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(jsonPath("$", hasSize(5)));
+    }
+
+    private List<UserDTO> getSampleUserDtoList(int number) {
+        List<UserDTO> userDTOS = new ArrayList<>();
+        for (int i = 0; i < number; i++) {
+            userDTOS.add(getSampleUserDTO(i, "name" + i,
+                    "lastname" + i, "user" + i,
+                    "mail" + i + "@com"));
+        }
+        return userDTOS;
+    }
+
+    private UserDTO getSampleUserDTO(int number, String name, String last, String username, String email) {
+        return UserDTO.builder()
+                .id(number)
+                .name(name)
+                .lastname(last)
+                .username(username)
+                .email(email)
+                .address(new Address(1, "sample-city", "sample-st", 1, 1))
+                .build();
+    }
+
+}
