@@ -9,4 +9,8 @@
     </parent>
     <artifactId>zuul-gateway-service</artifactId>
     <groupId>com.rsakin.getaxi</groupId>
-    
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Hoxton.SR9
