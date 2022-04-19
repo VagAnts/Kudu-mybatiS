@@ -18,4 +18,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</gro
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+        </dependency>
+        <dependency>
+     
