@@ -38,4 +38,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         // configure AuthenticationManager so that it knows from where to load
         // user for matching credentials
-        // Use BC
+        // Use BCryptPasswordEncoder
+        auth.userDetailsService(jwtUserDetailsService).passwordEncoder(passwordEncoder());
+    }
+
+    @Bean
+    public
