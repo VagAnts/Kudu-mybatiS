@@ -63,4 +63,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling()
                 .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
                 .and()
-                // dont authenticat
+                // dont authenticate this particular request
+                .authorizeRequests()
+                // enable auth apis
+                .an
