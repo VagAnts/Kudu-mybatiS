@@ -87,4 +87,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 "/users/v2/api-docs",
                 "/configuration/ui",
                 "/hystrix",
-                "/actuator/**
+                "/actuator/**",
+                "/swagger-resources/**",
+                "/configuration/security",
+                "/swagger-ui.html",
+   
