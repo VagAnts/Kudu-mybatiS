@@ -91,4 +91,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 "/swagger-resources/**",
                 "/configuration/security",
                 "/swagger-ui.html",
-   
+                "/hystrix.stream/**",
+                "/webjars/**");
+    }
+}
