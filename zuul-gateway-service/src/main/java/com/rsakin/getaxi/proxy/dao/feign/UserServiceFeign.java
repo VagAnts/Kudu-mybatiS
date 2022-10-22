@@ -3,4 +3,6 @@ package com.rsakin.getaxi.proxy.dao.feign;
 import com.rsakin.getaxi.proxy.dao.fallback.UserServiceFeignFallback;
 import com.rsakin.getaxi.proxy.dao.model.User;
 import com.rsakin.getaxi.proxy.dao.model.UserDTO;
-imp
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.w
