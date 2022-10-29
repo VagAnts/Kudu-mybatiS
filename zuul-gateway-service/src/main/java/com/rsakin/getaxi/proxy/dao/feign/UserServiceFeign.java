@@ -13,4 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient( name = "user-service", fallback = UserServiceFeignFallback.class)
 public interface UserServiceFeign {
 
-    @GetMapping(value = "/api/user/usernam
+    @GetMapping(value = "/api/user/username/{username}")
+    ResponseEntity<User> findByUsername(@PathVariable("username") String username);
+
+    @PostMapping(value = "/
