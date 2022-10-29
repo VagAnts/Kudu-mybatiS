@@ -16,4 +16,7 @@ public interface UserServiceFeign {
     @GetMapping(value = "/api/user/username/{username}")
     ResponseEntity<User> findByUsername(@PathVariable("username") String username);
 
-    @PostMapping(value = "/
+    @PostMapping(value = "/api/user/create")
+    ResponseEntity<UserDTO> save(@RequestBody User user);
+
+}
