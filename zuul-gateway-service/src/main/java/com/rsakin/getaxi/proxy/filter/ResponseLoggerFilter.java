@@ -28,4 +28,7 @@ public class ResponseLoggerFilter extends ZuulFilter {
     // Post-filter all requests and do any...
     @Override
     public Object run() {
-        RequestC
+        RequestContext ctx = RequestContext.getCurrentContext();
+        log.info("response status logged " + ctx.getResponse().getStatus());
+
+    
