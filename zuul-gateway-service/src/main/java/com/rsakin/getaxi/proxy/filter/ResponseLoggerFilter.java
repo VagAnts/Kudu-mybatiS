@@ -22,4 +22,10 @@ public class ResponseLoggerFilter extends ZuulFilter {
 
     @Override
     public int filterOrder() {
-        return
+        return FilterUtil.FILTER_ORDER;
+    }
+
+    // Post-filter all requests and do any...
+    @Override
+    public Object run() {
+        RequestC
