@@ -16,4 +16,10 @@ public class ResponseLoggerFilter extends ZuulFilter {
     }
 
     @Override
-    public St
+    public String filterType() {
+        return FilterUtil.FILTER_TYPE_POST;
+    }
+
+    @Override
+    public int filterOrder() {
+        return
