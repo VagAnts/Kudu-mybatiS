@@ -8,4 +8,12 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class ResponseLoggerFilter ext
+public class ResponseLoggerFilter extends ZuulFilter {
+
+    @Override
+    public boolean shouldFilter() {
+        return FilterUtil.SHOULD_FILTER;
+    }
+
+    @Override
+    public St
