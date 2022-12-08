@@ -7,4 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class DAOUser 
+public class DAOUser {
+
+    private long id;
+    private String username;
+    private String password;
+
+}
