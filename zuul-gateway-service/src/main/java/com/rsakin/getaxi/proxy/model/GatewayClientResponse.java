@@ -36,3 +36,14 @@ public class GatewayClientResponse implements ClientHttpResponse {
     @Override
     public void close() {
     }
+
+    @Override
+    public InputStream getBody() throws IOException {
+        return null;
+    }
+
+    @Override
+    public HttpHeaders getHeaders() {
+        return null;
+    }
+}
