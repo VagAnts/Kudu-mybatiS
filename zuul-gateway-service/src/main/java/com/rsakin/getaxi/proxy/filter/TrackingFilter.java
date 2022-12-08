@@ -1,14 +1,18 @@
+
 package com.rsakin.getaxi.proxy.filter;
 
 import com.netflix.zuul.ZuulFilter;
-import com.netflix.zuul.context.RequestContext;
 import com.rsakin.getaxi.proxy.util.FilterUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class ResponseLoggerFilter extends ZuulFilter {
+public class TrackingFilter extends ZuulFilter {
+
+    @Autowired
+    private FilterUtil filterUtil;
 
     @Override
     public boolean shouldFilter() {
@@ -17,7 +21,7 @@ public class ResponseLoggerFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return FilterUtil.FILTER_TYPE_POST;
+        return FilterUtil.FILTER_TYPE_PRE;
     }
 
     @Override
@@ -25,12 +29,13 @@ public class ResponseLoggerFilter extends ZuulFilter {
         return FilterUtil.FILTER_ORDER;
     }
 
-    // Post-filter all requests and do any...
+    // Pre-filter all requests and do any ...
     @Override
     public Object run() {
-        RequestContext ctx = RequestContext.getCurrentContext();
-        log.info("response status logged " + ctx.getResponse().getStatus());
-
+        filterUtil.setTransactionId();
+        log.info("transaction id created : " +
+                filterUtil.getTransactionId());
         return null;
     }
+
 }
