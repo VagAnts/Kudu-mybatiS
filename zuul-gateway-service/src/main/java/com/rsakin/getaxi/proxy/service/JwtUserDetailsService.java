@@ -21,4 +21,9 @@ import java.util.Map;
 public class JwtUserDetailsService implements UserDetailsService {
 
     @Autowired
-    pr
+    private UserServiceFeign userServiceFeign;
+
+    @Autowired
+    private PasswordEncoder bcryptEncoder;
+
+    private static f
