@@ -26,4 +26,8 @@ public class JwtUserDetailsService implements UserDetailsService {
     @Autowired
     private PasswordEncoder bcryptEncoder;
 
-    private static f
+    private static final Map<String, User> userCache = new HashMap<>();
+
+    @Override
+    public UserDetails loadUserByUsername(String username) {
+ 
