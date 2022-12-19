@@ -45,4 +45,6 @@ public class JwtUserDetailsService implements UserDetailsService {
     }
 
     public UserDTO save(User user) {
-        user.setPassword(bcryptEncoder.encode(use
+        user.setPassword(bcryptEncoder.encode(user.getPassword()));
+        ResponseEntity<UserDTO> userDTOResponseEntity = userServiceFeign.save(user);
+        UserDTO body = userDTOResponseEntit
