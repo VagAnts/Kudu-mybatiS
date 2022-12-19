@@ -37,4 +37,5 @@ public class JwtUserDetailsService implements UserDetailsService {
             ResponseEntity<User> byUsername = userServiceFeign.findByUsername(username);
             user = byUsername.getBody();
         }
-        i
+        if (user == null) {
+            throw new AuthenticationServiceException("Not authenticated  user [ " + username + " ]");
