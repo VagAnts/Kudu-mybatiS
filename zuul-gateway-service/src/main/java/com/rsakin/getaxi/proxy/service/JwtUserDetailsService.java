@@ -40,4 +40,9 @@ public class JwtUserDetailsService implements UserDetailsService {
         if (user == null) {
             throw new AuthenticationServiceException("Not authenticated  user [ " + username + " ]");
         }
-        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.
+        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(),
+                new ArrayList<>());
+    }
+
+    public UserDTO save(User user) {
+        user.setPassword(bcryptEncoder.encode(use
