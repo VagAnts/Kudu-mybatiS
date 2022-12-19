@@ -30,4 +30,11 @@ public class JwtUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) {
- 
+        User user;
+        if (userCache.get(username) != null) {
+            user = userCache.get(username);
+        } else {
+            ResponseEntity<User> byUsername = userServiceFeign.findByUsername(username);
+            user = byUsername.getBody();
+        }
+        i
