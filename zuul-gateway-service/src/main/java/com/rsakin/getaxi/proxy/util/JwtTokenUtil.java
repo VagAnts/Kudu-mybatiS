@@ -37,4 +37,8 @@ public class JwtTokenUtil implements Serializable {
 
     public <T> T getClaimFromToken(String token, Function<Claims, T> claimsResolver) {
         final Claims claims = getAllClaimsFromToken(token);
-        return claimsResolver.apply(cla
+        return claimsResolver.apply(claims);
+    }
+
+    // for retrieving any information from token we will need the secret key
+    private Claims getAllClaimsFromToken(
