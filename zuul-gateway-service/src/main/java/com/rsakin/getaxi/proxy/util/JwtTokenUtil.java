@@ -45,4 +45,6 @@ public class JwtTokenUtil implements Serializable {
         return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
     }
 
-    // check if the tok
+    // check if the token has expired
+    private Boolean isTokenExpired(String token) {
+        final Date expiration = getExpirationDateFro
