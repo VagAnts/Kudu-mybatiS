@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<confi
+<configuration>
+
+    <property name="LOG_LOCATION" value="C:/Users/Kafein/Desktop/Workplace/Personal/Own/GeTaxiApp/logs" />
+
+    <appender name="CONSOLE" class="ch.qos.lo
