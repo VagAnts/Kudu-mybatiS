@@ -8,4 +8,7 @@
             <level>INFO</level>
         </filter>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <patte
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %highlight(%-5level)  %blue(%class{36}.%M %L)  -  %msg%n</pattern>
+        </encoder>
+    </appender>
+
