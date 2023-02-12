@@ -12,3 +12,6 @@
         </encoder>
     </appender>
 
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_LOCATION}/zuul_log.log</File>
+     
