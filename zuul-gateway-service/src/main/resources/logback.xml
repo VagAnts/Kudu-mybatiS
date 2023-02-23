@@ -34,4 +34,9 @@
     </root>
 
     <!-- Application logs at trace level -->
-    <logger name="com.rsakin.getaxi.proxy" level="debug" addi
+    <logger name="com.rsakin.getaxi.proxy" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </logger>
+
+</configuration>
