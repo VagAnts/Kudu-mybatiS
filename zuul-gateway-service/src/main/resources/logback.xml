@@ -30,4 +30,8 @@
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
-        <appender-re
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <!-- Application logs at trace level -->
+    <logger name="com.rsakin.getaxi.proxy" level="debug" addi
